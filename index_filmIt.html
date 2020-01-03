@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="FilmIt_Style.css">
+    <title>Document</title>
+    <style> 
+        
+        h1{ 
+          color: #ffffff; 
+          font-weight: 100; 
+          font-size: 40px; 
+          margin: 40px 0px 20px; 
+        } 
+         #clockdiv{ 
+             padding-top: 300px;
+            font-family: sans-serif; 
+            color: #ffffff; 
+            display: inline-block; 
+            font-weight: 100; 
+            text-align: center; 
+            font-size: 30px; 
+        } 
+        #clockdiv > div{ 
+            padding: 10px; 
+            border-radius: 3px; 
+            background: rgba(224, 86, 224, 0.281); 
+            display: inline-block; 
+            width: 150px;
+        } 
+        #clockdiv div > span{ 
+            padding: 15px; 
+            border-radius: 3px; 
+            background: rgba(228, 48, 235, 0.445); 
+            display: inline-block; 
+        } 
+        smalltext{ 
+            padding-top: 5px; 
+            font-size: 16px; 
+        } 
+        </style> 
+</head>
+<body>
+    <div class="header ">
+        <div class="navbar">
+            <img class="logo" src="images/play_ma_music_2.png" alt="logo" style="width: 60px; border-radius: 50%;position: relative; top: -10px;">
+            <span style="position: relative;left: -120px;top:-8px;font-family:'Montserrat' ;font-size: x-large; color: aliceblue;">Film It</span>
+            <nav>
+                <ul class="navlinks">
+                <li> <a href="#presentation">presentation</a>  </li>
+                <li> <a href="#registration-form">register</a> </li>
+                <li> <a href="#programme">programme</a> </li>
+                <li> <a href="#speakers">speakers & sponsors</a> </li>
+            </ul>
+            </nav>
+            <button><a href="#registration-form">inscription</a></button>  
+        </div>
+
+        <div id="clockdiv"> 
+            <div> 
+              <span class="days" id="day"></span> 
+              <div class="smalltext">Days</div> 
+            </div> 
+            <div> 
+              <span class="hours" id="hour"></span> 
+              <div class="smalltext">Hours</div> 
+            </div> 
+            <div> 
+              <span class="minutes" id="minute"></span> 
+              <div class="smalltext">Minutes</div> 
+            </div> 
+            <div> 
+              <span class="seconds" id="second"></span> 
+              <div class="smalltext">Seconds</div> 
+            </div> 
+        </div> 
+        <h1 style="padding-top: 50px;">Film It : Premier Evennement Videoludique Reconnu au Niveau National</h1>
+
+    </div>
+    
+    
+        <div id="presentation" class="presentation lax " data-lax-translate-y="0 0,600 -200">
+            <div class="presentation-card lax " data-lax-translate-y="0 0,600 -200">
+                <h1>Film It</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ipsa iure accusantium voluptates cumque esse nobis vel consequatur beatae ducimus, unde, doloribus aut fugit eum omnis culpa, reprehenderit nulla ea?</p>
+            </div>
+        </div>
+
+
+
+        <div id="registration-form" class="registration-form lax " data-lax-translate-y="0 0,1000 -600">
+            <div class="form">
+                <h1 style="font-family: 'Montserrat';font-weight: bold;font-size:xx-large;color:rgb(0, 0, 0) ;padding-bottom: 40px;">Inscris-Toi Maintenant !!</h1 sty>
+                <form action="POST">
+                <div class="form-group">
+                    <label for="first-name">Prenom : </label>
+                    <input type="text" class="form-control-sm" id="first-name" name="first-name" id="">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Nom : </label>
+                    <input type="text" class="form-control-sm" id="first-name" name="last-name" id="">
+                </div>
+                 <div class="form-group">
+                    <label for="email">Email : </label>
+                    <input type="email" class="form-control-sm"  name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="tel">Numero : </label>
+                    <input type="text"  class="form-control-sm"  id="tel" name="tel" >
+                </div>    
+                <div class="form-group">
+                    <label for="">vous etes :</label>
+                    <select name="" class="form-control-sm"  id="category">
+                        <option value="opt1">étudiant</option>
+                        <option value="opt2">amateur</option>
+                        <option value="opt3">profetionnel</option>
+                        <option value="opt4">expert</option>
+                    </select>
+                </div>    
+                    
+                <div class="form-group">
+                    <label class="long-label" for="why">Pourquoi voulez-vous assister a cet evennement ? : </label>
+                     <textarea name="" class="form-control-sm"  id="why" cols="30" rows="10"></textarea>
+                </div>   
+                
+                <div class="form-check">
+                    <label class="long-label" for="">Allez-vous participer a la competition ? </label>
+                    <input class="form-check-input" type="radio" name="participant" value="yes" id="yes">
+                    <input class="form-check-input" type="radio" name="participant" value="no" id="no">
+                    <input type="file"  class="form-control-file"  name="" id="upload" disabled>
+                </div>
+                 <div class="form-group" style="align-items: center;">
+                    <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                 </div>   
+             
+
+                
+            </form>
+            </div>
+            
+            
+        </div>
+
+
+
+        <div id="programme" class="programme"></div>
+
+
+        <div id="speakers" class="speakers lax " data-lax-translate-y="0 0,1700 -800">
+            <div class="top-section">
+                <h1 style="margin: 80px; ">NOS SPEAKERS</h1>
+            </div>
+            <div class="main-sec" style="display: flex;flex-direction: row;justify-content:space-around ;flex-wrap: wrap;text-align: center;">
+                <div class="speaker-card">
+                    <label for="" style="color: #000;position: relative;left: 50px; font-family: 'Montserrat';">mahmoud libani</label>
+                    <div class="" style="width: 50px;height: 50px;"><img src="images/dollar-gill-X0iNZ0UZIrI-unsplash.jpg" alt="" style="width: 200px;height: 200px;border-radius: 50%;"></div>
+                    
+                </div class=>
+                <div class="speaker-card">
+                    <label for="" style="color: #000;position: relative;left: 50px; font-family: 'Montserrat';">elghazi fouad</label>
+                    <div style="width: 50px;height: 50px;"><img src="images/caleb-lucas-6rRuAqtWt60-unsplash.jpg" alt="" style="width: 200px;height: 200px;border-radius: 50%;"></div>
+                    
+                </div>
+                <div class="speaker-card">
+                    <label for="" style="color: #000;position: relative;left: 50px; font-family: 'Montserrat';">krimat younes</label>
+                    <div style="width: 50px;height: 50px;"><img src="images/kal-visuals-b1Hg7QI-zcc-unsplash.jpg" alt=""style="width: 200px;height: 200px;border-radius: 50%;"></div>
+                    
+                </div>
+                <div class="speaker-card">
+                    <label for="" style="color: #000;position: relative;left: 50px; font-family: 'Montserrat';">samsa nabila</label>
+                    <div style="width: 50px;height: 50px;"><img src="images/kal-visuals-t_z2UegYC-g-unsplash.jpg" alt=""style="width: 200px;height: 200px;border-radius: 50%;"></div>
+                    
+                </div>
+            
+            </div>
+        </div>
+
+            
+            
+        
+      
+
+
+
+
+        <div id="sponsors" class="sponsors lax " data-lax-translate-y="0 0,2100 -1000">
+
+            <div class="top-section">
+                <h1 style="margin: 80px;padding-bottom: 0;">NOS SPONSORS</h1>
+            </div>
+            <div class="main-sec" style="display: flex;flex-direction: row;justify-content:space-around ;align-items: center;">
+                <div class="speaker-card">
+                    <label for="" style="color: #ffffff;position: relative;left: 50px; font-family: 'Montserrat';">SAMSUNG</label>
+                    <div class="" style="width: 50px;height: 50px;"><img src="images/index.png" alt="" style="width: 200px;height: 200px;border-radius: 50%;"></div>
+                    
+                </div class=>
+                <div class="speaker-card">
+                    <label for="" style="color: #ffffff;position: relative;left: 50px; font-family: 'Montserrat';">IRIS</label>
+                    <div style="width: 50px;height: 50px;"><img src="images/IRIS.jpg" alt="" style="width: 200px;height: 200px;border-radius: 50%;"></div>
+                    
+                </div>
+                <div class="speaker-card">
+                    <label for="" style="color: #ffffff;position: relative;left: 50px; font-family: 'Montserrat';">LG</label>
+                    <div style="width: 50px;height: 50px;"><img src="images/lg.png" alt=""style="width: 200px;height: 200px;border-radius: 50%;"></div>
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+        
+
+    
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <script> 
+    window.onload = function() {
+	lax.setup() // init
+
+	const updateLax = () => {
+		lax.update(window.scrollY)
+		window.requestAnimationFrame(updateLax)
+	}
+
+	window.requestAnimationFrame(updateLax)
+}
+  
+        var deadline = new Date("jan 01, 2020 15:37:25").getTime(); 
+          console.log('deadline'+deadline);
+        var x = setInterval(function() { 
+          
+        var now = new Date().getTime(); 
+        var t = deadline - now; 
+        var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
+        var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+        var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
+        var seconds = Math.floor((t % (1000 * 60)) / 1000); 
+        document.getElementById("day").innerHTML =days ; 
+        document.getElementById("hour").innerHTML =hours; 
+        document.getElementById("minute").innerHTML = minutes;  
+        document.getElementById("second").innerHTML =seconds;  
+        if (t < 0) { 
+                clearInterval(x); 
+                document.getElementById("demo").innerHTML = "TIME UP"; 
+                document.getElementById("day").innerHTML ='0'; 
+                document.getElementById("hour").innerHTML ='0'; 
+                document.getElementById("minute").innerHTML ='0' ;  
+                document.getElementById("second").innerHTML = '0'; } 
+        }, 1000); 
+        </script>
+</body>
+</html>

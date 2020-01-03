@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+* {
+  margin: 0;  
+  padding: 0;
+  box-sizing:border-box;
+}
+body{
+    text-align: center; 
+    background: #000;
+}
+.header {
+    background-image: url(images/florian-klauer-LmkaYtMpNS8-unsplash.jpg);
+    background-position: center;
+    background-origin: content-box;
+    background-size: 100%;
+    height: 120vh;
+    
+}
+.logo {
+    cursor:pointer
+}
+
+.navbar{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    height: 120px;
+    background: rgba(145, 3, 163, 0.158);
+    z-index: 10px;
+    ;
+}
+a,li,button {
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size:20px ;
+    color: #edf0f1;
+    text-decoration: none;
+
+}
+.navlinks {
+    list-style: none;
+}
+.navlinks li {
+    display: inline-block;
+    padding: 20px;
+}
+.navlinks li a {
+    transition: all 0.3s ease 0s;
+}
+.navlinks li a:hover{
+color:#f804e4;
+}
+button {
+    padding: 9px 25px;
+    background-color:#f804e4;
+    border : none ;
+    border-radius: 50px;
+    cursor :pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+
+
+.presentation {
+    padding-top: 10vw;
+    height:1200px;
+    background-image: url(images/thomas-william-4qGbMEZb56c-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    z-index: 0;
+    clip-path: polygon(0 calc(5vw),100% 0,100% calc(100% - 5vw),0 100%);
+    margin-top: -10vw;
+    margin-bottom: -10vw;
+    
+}
+.presentation-card{
+    height: 40%;
+    width: 70%;
+    position: relative; 
+    top: 20%;
+    left: 15%;
+    text-align: left;
+    align-items: center;
+    background-color:rgba(90, 50, 90, 0.25);
+    border-radius: 10%;
+    padding: 50px;
+    
+    
+}
+
+.presentation-card h1, .presentation-card p {
+    font-family: " Montserrat" ,sans-serif;
+    margin : 10px;
+}
+.presentation-card h1 {
+    font-size: 70px;
+}
+.presentation-card p {
+    font-size: 18px;
+}
+
+
+
+
+.registration-form{
+    padding-top: 10vw;
+    height: 1100px;
+    background-image: url(images/alexandre-debieve-unsplash.jpg);
+    background-origin: top;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0,100% calc(5vw),100% 100%,0 calc(100% - 5vw));
+    margin-top: -10vw;
+    text-align: left;
+    z-index: 0;
+}
+
+.form {
+    width: 550px;
+    position: relative; 
+  
+    left: 30%;
+    text-align: left;
+    align-items: center;
+    background-color:rgba(238, 200, 200, 0.637);
+    border-radius: 5%;
+    padding: 50px;
+    padding-top: 30px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    align-items: center;
+}
+label{
+    width: 100px;
+    color: rgb(10, 30, 83);
+    font-family: "Montserrat",sans-serif;
+    font-weight: bold;
+}
+.long-label {
+    width: 100%;
+}
+.form button {
+    padding: 4pm;
+    margin: 20px;
+    background-color: skyblue;
+    border: none;
+}
+
+.speakers {
+    padding: 20px;
+    background: #fff;
+    height: 1150px;
+    clip-path: polygon(0 calc(5vw),100% 0,100% 100%,calc(5vw) 100%);
+    margin-bottom: -10vw;
+    z-index: 0;
+}
+.main-sec {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.speaker-card{
+    margin: 100px;
+    display: block;
+}
+.speakers h1 {
+    color: #000;
+}
+
+
+.sponsors {
+    padding: 20px;
+    background:rgb(9, 3, 61);
+    clip-path: polygon(0 calc(5vw),100% 0,100% 100%,0 100%);
+    margin-top: -10vw;
+    margin-bottom: -10vw;
+    height: 700px;
+    z-index: 0;
+}
+.sponsors h1 {
+    color: #fff;
+}
+
+
+
+
+
